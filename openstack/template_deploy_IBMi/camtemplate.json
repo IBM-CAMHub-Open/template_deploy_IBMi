@@ -1,0 +1,72 @@
+{
+   "name": "template_deploy_IBMi",
+   "description": "IBM i Example to initiate an IBM i virtual machine.",
+   "version": "1.0.0",
+   "imageUrl": "./assets/svg/IBM_WebSphere_Standalone.svg",
+   "image": "tp_WAS_standalone.png",
+   "type": "prebuilt",
+   "status": "active",
+   "manifest": {
+     "template_type": "Terraform",
+     "template_format": "HCL",
+     "template_provider": "OpenStack",
+     "template": {
+       "templateData": "",
+       "templateVariables": "",
+       "templateOutput": ""
+     },
+     "template_source": {
+     "githubRepoUrl": "",
+     "githubAccessToken": "",
+     "relativePathToTemplateFolder": "openstack/template_deploy_IBMi",
+     "templateFileName": "main.tf"
+      }
+   },
+   "metadata": {
+     "displayName": "IBM i Deployment Example",
+     "providerDisplayName": "openstack - IBM PowerVC",
+     "longDescription": "IBM i Deployment Example",
+     "bullets": [
+      {
+        "title": "Clouds",
+        "description": "Openstack - IBM PowerVC"
+      },
+      {
+        "title": "Template version",
+        "description": "1.0.0<br>"
+      },
+      {
+        "title": "Operating systems supported",
+        "description": "IBM i"
+      },
+      {
+        "title": "Topology",
+        "description": "openstack - IBM PowerVC: Single virtual machines"
+      },
+      {
+        "title": "Usage and special notes",
+        "description": "<ul><li>Deploy an IBM i virtual machine.</li></ul>"
+      }
+     ],
+     "featuredImageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_50.png",
+     "imageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_50.png",
+     "mediumImageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_32.png",
+     "smallImageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_24.png",
+     "documentationUrl": "https://console.stage1.ng.bluemix.net/docs/services/CloudAutomationManager/index.html",
+     "termsUrl": "http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-7448-01",
+     "media": [
+       {
+         "type": "image",
+         "thumbnailUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/screenshots_1.png",
+         "url": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/screenshots_1_large.png",
+         "caption": ""
+       },
+       {
+         "type": "image",
+         "thumbnailUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/screenshots_2.png",
+         "url": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/screenshots_2_large.png",
+         "caption": ""
+       }
+     ]
+   }
+ }

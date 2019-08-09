@@ -1,0 +1,200 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "target_system_information",
+      "label": "Target_system_information"
+    },
+    {
+      "name": "ansible_server_information",
+      "label": "Ansible_server_information"
+    },
+    {
+      "name": "software_repository_information",
+      "label": "Software_repository_information"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "ansible_server_connection_user",
+      "label": "Ansible Server Connection User",
+      "description": "The user to connect to Ansible server.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "ansible_server_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_server_connection_password",
+      "label": "Ansible Server Connection Password",
+      "description": "The password to connect to Ansible server.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "ansible_server_information",
+      "required": true,
+      "secured": true,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_server_ip",
+      "label": "Ansible Server Ip",
+      "description": "The IP or system name of the Ansible server.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "ansible_server_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_working_directory",
+      "label": "Ansible Working Directory",
+      "description": "The working directory of Ansible. A new one is to be created if it doesn't exist.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "ansible_server_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "repository_directory",
+      "label": "Repository Directory",
+      "description": "The library of repository system to store media files. An example is /QOpensys/repo.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "software_repository_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ibmi_repo_user",
+      "label": "Software repository user",
+      "description": "The user to connect to software repository system.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "software_repository_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ibmi_repo_password",
+      "label": "Software repository password",
+      "description": "The password to connect to the software repository system.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "software_repository_information",
+      "required": true,
+      "secured": true,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ibmi_repo_ip",
+      "label": "Software repository ip",
+      "description": "The IP or system name of the software repository system.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "software_repository_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_bin_path",
+      "label": "Ansible Bin Path",
+      "description": "The directory of ansible command. For example, /usr/local/bin/. Leave it as blank if ansible command is in PATH.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "ansible_server_information",
+      "required": false,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "PTFs",
+      "label": "PTFs",
+      "description": "PTF packages to be installed. An example is C9123720",
+      "type": "list",
+      "default": [],
+      "validation": "",
+      "group_name": "target_system_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "IBMi_systems",
+      "label": "Ibmi Systems",
+      "description": "Target IBMi to install PTFs. An example is '10.10.10.1 ansible_ssh_user=quser ansible_ssh_pass=pwd. If ssh has configured non-password login, ansible_ssh_password is optional.",
+      "type": "list",
+      "default": ["10.10.10.1 ansible_ssh_user=quser ansible_ssh_pass=pwd"],
+      "validation": "",
+      "group_name": "target_system_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "NeedIPL",
+      "label": "Need IPL or not",
+      "description": "Need IPL target systems after PTF installation or not",
+      "type": "string",
+      "default": "false",
+      "validation": "",
+      "group_name": "target_system_information",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [  {
+    "name": "Ansible running log",
+    "label": "Ansible Running Log",
+    "description": "Ansible Running Log",
+    "group_name": "",
+    "secured": false,
+    "hidden": false,
+    "shortname": "",
+    "type": "string"
+  } ]
+}

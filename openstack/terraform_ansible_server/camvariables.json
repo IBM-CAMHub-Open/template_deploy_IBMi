@@ -1,0 +1,198 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-openstack_compute_instance_v2.ansible_server",
+      "label": "Instances - openstack_compute_instance_v2.ansible_server"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "Other-openstack",
+      "label": "Other - openstack"
+    },
+    {
+      "name": "instances",
+      "label": "Instances"
+    },
+    {
+      "name": "openstack_compute_instance_v2_connection",
+      "label": "openstack_compute_instance_v2 Connection"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "ansible_server_name",
+      "label": "Ansible Server Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_image_name",
+      "label": "Openstack Image Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "Ubuntu_without_source_ip",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_flavor_name",
+      "label": "Openstack Flavor Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "lj",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_key_pair_name",
+      "label": "Openstack Key Pair Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_server_connection_user",
+      "label": "Ansible Server Connection User",
+      "description": "Ansible Server Connection User",
+      "type": "string",
+      "default": "root",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_server_connection_password",
+      "label": "Ansible Server Connection Password",
+      "description": "Ansible Server Connection Password",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": true,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ansible_home_directory",
+      "label": "Ansible Home Directory",
+      "description": "Ansible Home Directory",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_network_name",
+      "label": "openstack_network_name",
+      "description": "Generated",
+      "type": "string",
+      "default": "net50",
+      "validation": "",
+      "group_name": "instances",
+      "required": false,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "fixed_ip_v4",
+      "label": "fixed_ip_v4",
+      "description": "Generated. Must be IP Address",
+      "type": "string",
+      "default": "",
+      "validation": "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",
+      "group_name": "instances",
+      "required": false,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "Ansible Public SSH Key for other machines",
+      "label": "Ansible Public Ssh Key For Other Machines",
+      "description": "Ansible Public Ssh Key For Other Machines",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "Ansible server ip for client connection",
+      "label": "Ansible Server Ip For Client Connection",
+      "description": "Ansible Server Ip For Client Connection",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "Ansible playbook directory",
+      "label": "Ansible Playbook Directory",
+      "description": "Ansible Playbook Directory",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "Ansible command directory",
+      "label": "Ansible Command Directory",
+      "description": "Ansible Command Directory",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    }
+  ]
+}

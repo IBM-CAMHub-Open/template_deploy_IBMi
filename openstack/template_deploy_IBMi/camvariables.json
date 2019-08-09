@@ -1,0 +1,128 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "label": "Instances - openstack_compute_instance_v2.IBMi-vm"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "vm_name",
+      "label": "Vm Name",
+      "description": "The name of the instance to be deployed.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "fixed_ip_v4",
+      "label": "Fixed Ip V 4",
+      "description": "The IP of deployed VM",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_image_name",
+      "label": "Openstack Image Name",
+      "description": "The name of the image to be used for deploy operations.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_flavor_name",
+      "label": "Openstack Flavor Name",
+      "description": "The name of the flavor to be used for deploy operations.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_network_name",
+      "label": "Openstack Network Name",
+      "description": "The name of the network to be used for deploy operations.",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "key_pair_name",
+      "label": "Key Pair Name",
+      "description": "The name of public key",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": false,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "run_cmd",
+      "label": "Run Cmd",
+      "description": "The commands to be ran on the deployed VM. An example is system 'crtlib testlib'. Seperate multiple commands by comma.",
+      "type": "list",
+      "default": [
+        ""
+      ],
+      "validation": "",
+      "group_name": "Instances-openstack_compute_instance_v2.IBMi-vm",
+      "required": false,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [  {
+    "name": "single-vm-ip",
+    "label": "Single Vm Ip",
+    "description": "Single Vm Ip",
+    "group_name": "",
+    "secured": false,
+    "hidden": false,
+    "shortname": "",
+    "type": "string"
+  } ]
+}
