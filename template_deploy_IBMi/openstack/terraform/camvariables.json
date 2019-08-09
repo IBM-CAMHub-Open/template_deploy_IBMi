@@ -30,7 +30,7 @@
     },
     {
       "name": "fixed_ip_v4",
-      "label": "Fixed Ip V 4",
+      "label": "Fixed_ip_v4",
       "description": "The IP of deployed VM",
       "type": "string",
       "default": "",
@@ -87,7 +87,7 @@
     {
       "name": "key_pair_name",
       "label": "Key Pair Name",
-      "description": "The name of public key",
+      "description": "The public key to be injected into the deployed vm",
       "type": "string",
       "default": "",
       "validation": "",

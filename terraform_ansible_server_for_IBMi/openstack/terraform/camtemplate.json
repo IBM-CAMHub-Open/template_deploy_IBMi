@@ -1,6 +1,6 @@
 {
    "name": "terraform_ansible_server",
-   "description": "An Example to initiate an Ansible server for IBM i.",
+   "description": "An Example to initiate an Ansible server for IBM i management.",
    "version": "1.0.0",
    "imageUrl": "./assets/svg/IBM_WebSphere_Standalone.svg",
    "image": "tp_WAS_standalone.png",
@@ -23,9 +23,9 @@
       }
    },
    "metadata": {
-     "displayName": "Ansible Server Deployment Example",
+     "displayName": "Ansible Server Deployment Example For IBM i management",
      "providerDisplayName": "openstack - IBM PowerVC",
-     "longDescription": "Ansible Server Deployment Example",
+     "longDescription": "Ansible Server Deployment Example for IBM i management",
      "bullets": [
       {
         "title": "Clouds",
@@ -37,7 +37,7 @@
       },
       {
         "title": "Operating systems",
-        "description": "Ubuntu"
+        "description": "Linux"
       },
       {
         "title": "Topology",
@@ -45,11 +45,11 @@
       },
       {
         "title": "Prerequsites",
-        "description": "<ul><li>1. An pre-configured user who can run sudo command with no password</li></ul>"
+        "description": "<ul><li>1. A pre-configured user who can run sudo command with no password</li></ul>"
       },
       {
         "title": "Usage and special notes",
-        "description": "<ul><li>Deploy an Ansible Server for IBM i.</li></ul>"
+        "description": "<ul><li>Deploy an Ansible Server to manage IBM i.</li></ul>"
       }
      ],
      "featuredImageUrl": "https://ibmpatternengine-staticcontent-prod.eu-gb.mybluemix.net/ic_patternengine_50.png",

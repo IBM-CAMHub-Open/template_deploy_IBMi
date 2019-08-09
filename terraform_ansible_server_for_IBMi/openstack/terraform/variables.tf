@@ -19,14 +19,13 @@ variable "openstack_flavor_name" {
   description = "Generated"
 }
 
-variable "openstack_key_pair_name" {
+variable "openstack_key_name" {
   type = "string"
-  description = "Generated"
+  description = "Give a name to the key to be added as openstack public key"
 }
 
 variable "ansible_server_connection_user" {
   type = "string"
-  default = "root"
 }
 
 variable "ansible_server_connection_password" {
@@ -40,7 +39,6 @@ variable "ansible_home_directory" {
 variable "openstack_network_name" {
   type = "string"
   description = "Generated"
-  default = "net50"
 }
 
 variable "fixed_ip_v4" {

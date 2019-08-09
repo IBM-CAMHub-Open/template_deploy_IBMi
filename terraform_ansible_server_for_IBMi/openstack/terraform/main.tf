@@ -28,7 +28,7 @@ resource "tls_private_key" "remote_server_key" {
 }
 
 resource "openstack_compute_keypair_v2" "auth" {
-    name = "${var.openstack_key_pair_name}"
+    name = "${var.openstack_key_name}"
     public_key = "${tls_private_key.remote_server_key.public_key_openssh}"
 }
 
@@ -72,8 +72,6 @@ if [[ $PLATFORM == *"ubuntu"* ]]; then
     wait_apt_lock
     echo "---start installing Ansible---" | tee -a $LOGFILE 2>&1
     retryInstall "sudo apt-get install -y software-properties-common" >> $LOGFILE 2>&1 || { echo "---Failed to install Ansible---" | tee -a $LOGFILE; exit 1; }
-    #retryInstall "sudo apt-add-repository --yes --update ppa:ansible/ansible" >> $LOGFILE 2>&1 || { echo "---Failed to install Ansible---" | tee -a $LOGFILE; exit 1; }
-    #retryInstall "sudo apt-get install -y ansible" >> $LOGFILE 2>&1 || { echo "---Failed to install Ansible---" | tee -a $LOGFILE; exit 1; }
     retryInstall "sudo apt-get install -y python-pip python-dev libffi-dev libssl-dev sshpass" >> $LOGFILE 2>&1 || { echo "---Failed to install pip---" | tee -a $LOGFILE; exit 1; }
     retryInstall "sudo pip install ansible==2.7.10" >> $LOGFILE 2>&1 || { echo "---Failed to install Ansible---" | tee -a $LOGFILE; exit 1; }
     echo "---finish installing Ansible---" | tee -a $LOGFILE 2>&1

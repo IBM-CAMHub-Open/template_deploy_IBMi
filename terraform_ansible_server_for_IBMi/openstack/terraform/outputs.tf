@@ -15,7 +15,3 @@ output "Ansible server ip for client connection" {
 output "Ansible playbook directory" {
   value = "${var.ansible_home_directory}"
 }
-
-output "Ansible command directory" {
-  value = "/usr/local/bin"
-}
