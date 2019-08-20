@@ -18,7 +18,7 @@
      "template_source": {
      "githubRepoUrl": "",
      "githubAccessToken": "",
-     "relativePathToTemplateFolder": "openstack/template_install_PTF_from_savf",
+     "relativePathToTemplateFolder": "template_install_PTF_from_savf/openstack/terraform",
      "templateFileName": "main.tf"
       }
    },

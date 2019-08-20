@@ -18,7 +18,7 @@
      "template_source": {
      "githubRepoUrl": "",
      "githubAccessToken": "",
-     "relativePathToTemplateFolder": "openstack/terraform_ansible_server",
+     "relativePathToTemplateFolder": "terraform_ansible_server_for_IBMi/openstack/terraform",
      "templateFileName": "main.tf"
       }
    },
